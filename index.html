@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>UV App Starter</title>
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/universalviewer@beta/uv/uv.css">
+    <link rel="stylesheet" type="text/css" href="uv/uv.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="https://unpkg.com/manifesto.js/dist/client/manifesto.bundle.js"></script>
     <script src="https://unpkg.com/iiif-gallery/dist/iiifgallery.js"></script>
-    <script src="https://unpkg.com/universalviewer@beta/uv/lib/offline.js"></script>
-    <script src="https://unpkg.com/universalviewer@beta/uv/helpers.js"></script>
+    <script src="uv/lib/offline.js"></script>
+    <script src="uv/helpers.js"></script>
 </head>
 <body>
 
@@ -25,7 +25,7 @@
         function setupUV(manifest) {
 
             urlDataProvider = new UV.URLDataProvider();
-
+            
             var data = {
                 iiifResourceUri: manifest,
                 configUri: 'uv-config.json',
@@ -78,6 +78,6 @@
 
     </script>
 
-    <script src="https://unpkg.com/universalviewer@beta/uv/uv.js"></script>
+    <script src="uv/uv.js"></script>
 </body>
 </html>
