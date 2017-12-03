@@ -4,7 +4,6 @@
   "description": "Universal Viewer App Starter",
   "main": "index.js",
   "scripts": {
-    "postinstall": "rm -rf uv && cp -R node_modules/universalviewer/uv uv",
     "build": "biiif content -u http://localhost:8888/content",
     "start": "npm run build && http-server -c-1 -p 8888"
   },
@@ -14,7 +13,7 @@
   },
   "keywords": [
     "IIIF",
-    "Universalviewer",
+    "universalviewer",
     "starter"
   ],
   "author": "@edsilv",
@@ -28,6 +27,6 @@
     "http-server": "^0.10.0"
   },
   "dependencies": {
-    "universalviewer": "^3.0.0"
+
   }
 }

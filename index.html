@@ -5,10 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>UV App Starter</title>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/universalviewer@beta/uv/uv.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="https://unpkg.com/manifesto.js/dist/client/manifesto.bundle.js"></script>
     <script src="https://unpkg.com/iiif-gallery/dist/iiifgallery.js"></script>
+    <script src="https://unpkg.com/universalviewer@beta/uv/lib/offline.js"></script>
+    <script src="https://unpkg.com/universalviewer@beta/uv/helpers.js"></script>
 </head>
 <body>
+
     <iiif-gallery manifest="http://localhost:8888/content/index.json"></iiif-gallery>
+
+    <div id="uv" class="uv"></div>
+
+    <script>
+
+        var uv, urlDataProvider;
+
+        function setupUV(manifest) {
+
+            urlDataProvider = new UV.URLDataProvider();
+
+            var data = {
+                iiifResourceUri: manifest,
+                configUri: 'uv-config.json',
+                collectionIndex: Number(urlDataProvider.get('c', 0)),
+                manifestIndex: Number(urlDataProvider.get('m', 0)),
+                sequenceIndex: Number(urlDataProvider.get('s', 0)),
+                canvasIndex: Number(urlDataProvider.get('cv', 0)),
+                rotation: Number(urlDataProvider.get('r', 0)),
+                xywh: urlDataProvider.get('xywh', '')
+            };
+
+            uv = createUV('#uv', data, urlDataProvider);
+
+            uv.on('created', function() {
+                Utils.Urls.setHashParameter('manifest', manifest);
+            });
+        }
+
+        function openManifest(manifest) {
+
+            if (!uv) {
+                setupUV(manifest);
+            } else {
+                uv.set({
+                    iiifResourceUri: manifest,
+                    collectionIndex: 0,
+                    manifestIndex: 0,
+                    sequenceIndex: 0,
+                    canvasIndex: 0
+                });
+            }
+            
+        }
+        
+        window.addEventListener('uvLoaded', function(e) { 
+
+            const iiifGallery = document.querySelector('iiif-gallery');
+
+            iiifGallery.addEventListener('onSelectManifest', function (evt) {
+                openManifest(evt.detail.id);
+            });
+
+            iiifGallery.addEventListener('onSelectCollection', function (evt) {
+                openManifest(evt.detail.id);
+            });
+
+            openManifest('http://wellcomelibrary.org/iiif/b18035723/manifest');
+
+        }, false);
+
+    </script>
+
+    <script src="https://unpkg.com/universalviewer@beta/uv/uv.js"></script>
 </body>
 </html>
