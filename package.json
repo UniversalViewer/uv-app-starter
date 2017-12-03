@@ -1,0 +1,33 @@
+{
+  "name": "uv-app-starter",
+  "version": "0.0.1",
+  "description": "Universal Viewer App Starter",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "rm -rf uv && cp -R node_modules/universalviewer/uv uv",
+    "build": "biiif content -u http://localhost:8888/content",
+    "start": "npm run build && http-server -c-1 -p 8888"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UniversalViewer/uv-app-starter.git"
+  },
+  "keywords": [
+    "IIIF",
+    "Universalviewer",
+    "starter"
+  ],
+  "author": "@edsilv",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/UniversalViewer/uv-app-starter/issues"
+  },
+  "homepage": "https://github.com/UniversalViewer/uv-app-starter#readme",
+  "devDependencies": {
+    "biiif-cli": "0.0.5",
+    "http-server": "^0.10.0"
+  },
+  "dependencies": {
+    "universalviewer": "^3.0.0"
+  }
+}
