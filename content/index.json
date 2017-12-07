@@ -1,37 +1,37 @@
 {
-  "id": "http://localhost:8888/content/index.json",
+  "id": "https://username.github.io/uv-app-starter-fork/content/index.json",
   "type": "Collection",
   "label": "Bones",
   "members": [
     {
-      "id": "http://localhost:8888/content/animal_skull/index.json",
+      "id": "https://username.github.io/uv-app-starter-fork/content/animal_skull/index.json",
       "type": "Manifest",
       "label": "Animal Skull",
       "thumbnail": [
         {
-          "id": "http://localhost:8888/content/animal_skull/thumb.jpg",
+          "id": "https://username.github.io/uv-app-starter-fork/content/animal_skull/thumb.jpg",
           "type": "Image"
         }
       ]
     },
     {
-      "id": "http://localhost:8888/content/human_skull/index.json",
+      "id": "https://username.github.io/uv-app-starter-fork/content/human_skull/index.json",
       "type": "Manifest",
       "label": "Human Skull",
       "thumbnail": [
         {
-          "id": "http://localhost:8888/content/human_skull/thumb.jpg",
+          "id": "https://username.github.io/uv-app-starter-fork/content/human_skull/thumb.jpg",
           "type": "Image"
         }
       ]
     },
     {
-      "id": "http://localhost:8888/content/vertebra/index.json",
+      "id": "https://username.github.io/uv-app-starter-fork/content/vertebra/index.json",
       "type": "Manifest",
       "label": "Vertebra",
       "thumbnail": [
         {
-          "id": "http://localhost:8888/content/vertebra/thumb.jpg",
+          "id": "https://username.github.io/uv-app-starter-fork/content/vertebra/thumb.jpg",
           "type": "Image"
         }
       ]

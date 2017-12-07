@@ -1,5 +1,5 @@
 {
-  "id": "http://localhost:8888/content/animal_skull/index.json",
+  "id": "https://username.github.io/uv-app-starter-fork/content/animal_skull/index.json",
   "type": "Manifest",
   "label": "Animal Skull",
   "sequences": [
@@ -7,24 +7,24 @@
       "type": "Sequence",
       "canvases": [
         {
-          "id": "http://localhost:8888/content/animal_skull/index.json/canvas/0",
+          "id": "https://username.github.io/uv-app-starter-fork/content/animal_skull/index.json/canvas/0",
           "type": "Canvas",
           "content": [
             {
-              "id": "http://localhost:8888/content/animal_skull/index.json/canvas/0/annotationpage/0",
+              "id": "https://username.github.io/uv-app-starter-fork/content/animal_skull/index.json/canvas/0/annotationpage/0",
               "type": "AnnotationPage",
               "items": [
                 {
-                  "id": "http://localhost:8888/content/animal_skull/index.json/canvas/0/annotation/0",
+                  "id": "https://username.github.io/uv-app-starter-fork/content/animal_skull/index.json/canvas/0/annotation/0",
                   "type": "Annotation",
                   "motivation": "painting",
                   "body": {
-                    "id": "http://localhost:8888/content/animal_skull/_animal_skull/skull.obj",
+                    "id": "https://username.github.io/uv-app-starter-fork/content/animal_skull/_animal_skull/skull.obj",
                     "type": "PhysicalObject",
                     "format": "text/plain",
                     "label": "_animal_skull"
                   },
-                  "target": "http://localhost:8888/content/animal_skull/index.json/canvas/0"
+                  "target": "https://username.github.io/uv-app-starter-fork/content/animal_skull/index.json/canvas/0"
                 }
               ]
             }
@@ -37,7 +37,7 @@
   "attribution": "Nellis Antiques",
   "thumbnail": [
     {
-      "id": "http://localhost:8888/content/animal_skull/thumb.jpg",
+      "id": "https://username.github.io/uv-app-starter-fork/content/animal_skull/thumb.jpg",
       "type": "Image"
     }
   ]
