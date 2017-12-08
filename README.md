@@ -28,7 +28,7 @@
 
 - Now run `npm run dist`
 
-- Add your changes to the `gh-pages` branch, and `git push origin gh-pages`.
+- Add your changes to the `gh-pages` branch, and `git push origin gh-pages`
 
-- You site should now be available at `https://edsilv.github.io/my-portfolio/`
+- Your site should now be available at `https://edsilv.github.io/my-portfolio/`
 
