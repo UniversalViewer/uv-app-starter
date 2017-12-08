@@ -10,7 +10,7 @@
 
  - Check out the `gh-pages` branch
 
-  - Run `npm install`
+ - Run `npm install`
 
  - Organise your files and folders in `/content` using the [biiif conventions](https://github.com/edsilv/biiif/#examples)
 
