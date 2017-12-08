@@ -6,9 +6,11 @@
 
  - Rename the repo, e.g. "my-portfolio"
 
- - Clone the repo to your desktop.
+ - Clone the repo to your desktop
 
- - Check out the `gh-pages` branch.
+ - Run `npm install`
+
+ - Check out the `gh-pages` branch
 
  - Organise your files and folders in `/content` using the [biiif conventions](https://github.com/edsilv/biiif/#examples)
 
