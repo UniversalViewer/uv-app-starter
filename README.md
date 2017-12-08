@@ -1,6 +1,6 @@
 # uv-app-starter
 
-## Setup
+### Setup
 
  - Fork this repo on github to your personal account.
 
