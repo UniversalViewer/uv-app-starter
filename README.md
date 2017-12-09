@@ -1,5 +1,7 @@
 # uv-app-starter
 
+Get started building a [IIIF](http://iiif.io)-enabled website using the [Universal Viewer](http://universalviewer.io) and host it for free on [Github Pages](https://pages.github.com/).
+
 ### Setup
 
  - Fork this repo on github to your personal account.

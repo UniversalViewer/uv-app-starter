@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>UV App Starter</title>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css">
     <link rel="stylesheet" type="text/css" href="uv/uv.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://unpkg.com/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="https://unpkg.com/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/manifesto.js/dist/client/manifesto.bundle.js"></script>
     <script src="https://unpkg.com/iiif-gallery/dist/iiifgallery.js"></script>
     <script src="uv/lib/offline.js"></script>
     <script src="uv/helpers.js"></script>
 </head>
+
 <body>
 
-    <iiif-gallery manifest="http://localhost:8888/content/index.json"></iiif-gallery>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    My Portfolio
+                </a>
+            </div>
+        </div>
+    </nav>
 
     <div id="uv" class="uv"></div>
 
+    <iiif-gallery manifest="http://localhost:8888/content/index.json"></iiif-gallery>
+
     <script>
 
-        var uv, urlDataProvider;
+        var uv, $uv, urlDataProvider;
 
         function setupUV(manifest) {
 
             urlDataProvider = new UV.URLDataProvider();
-            
+
             var data = {
                 iiifResourceUri: manifest,
                 configUri: 'uv-config.json',
@@ -39,7 +55,7 @@
 
             uv = createUV('#uv', data, urlDataProvider);
 
-            uv.on('created', function() {
+            uv.on('created', function () {
                 Utils.Urls.setHashParameter('manifest', manifest);
             });
         }
@@ -47,8 +63,13 @@
         function openManifest(manifest) {
 
             if (!uv) {
-                setupUV(manifest);
+
+                $uv.slideDown("fast", function() {
+                    setupUV(manifest);
+                });
+
             } else {
+
                 uv.set({
                     iiifResourceUri: manifest,
                     collectionIndex: 0,
@@ -56,11 +77,14 @@
                     sequenceIndex: 0,
                     canvasIndex: 0
                 });
+
             }
-            
+
         }
-        
-        window.addEventListener('uvLoaded', function(e) { 
+
+        window.addEventListener('uvLoaded', function (e) {
+
+            $uv = $('#uv');
 
             const iiifGallery = document.querySelector('iiif-gallery');
 
@@ -78,4 +102,5 @@
 
     <script src="uv/uv.js"></script>
 </body>
+
 </html>
