@@ -26,9 +26,9 @@
 
     <script>
 
-        var uv, $uv, urlDataProvider;
+        var uv, $uv, urlDataProvider, manifest;
 
-        function setupUV(manifest) {
+        function setupUV() {
 
             urlDataProvider = new UV.URLDataProvider();
 
@@ -50,12 +50,12 @@
             });
         }
 
-        function openManifest(manifest) {
+        function openManifest() {
 
             if (!uv) {
 
                 $uv.slideDown("fast", function() {
-                    setupUV(manifest);
+                    setupUV();
                 });
 
             } else {
@@ -81,12 +81,21 @@
             const iiifGallery = document.querySelector('iiif-gallery');
 
             iiifGallery.addEventListener('onSelectManifest', function (evt) {
-                openManifest(evt.detail.id);
+                manifest = evt.detail.id;
+                openManifest();
             });
 
             iiifGallery.addEventListener('onSelectCollection', function (evt) {
-                openManifest(evt.detail.id);
+                manifest = evt.detail.id;
+                openManifest();
             });
+
+            // are there uv hash parameters?
+            manifest = Utils.Urls.getHashParameter('manifest');
+
+            if (manifest) {
+                openManifest(manifest);
+            }
 
         }, false);
 
