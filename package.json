@@ -7,7 +7,7 @@
     "postinstall": "npm run sync",
     "sync": "rm -rf uv && cp -R node_modules/universalviewer/uv uv",
     "build": "biiif collection -u http://localhost:8888/collection",
-    "dist": "biiif collection -u https://username.github.io/uv-app-starter-fork/collection",
+    "dist": "biiif collection -u https://username.github.io/uv-app-starter/collection",
     "start": "npm run build && http-server -c-1 -p 8888"
   },
   "repository": {

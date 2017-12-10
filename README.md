@@ -10,8 +10,6 @@ Get started building a [IIIF](http://iiif.io)-enabled website using the [Univers
 
  - Clone the repo to your desktop
 
- - Check out the `gh-pages` branch `git checkout gh-pages`
-
  - Run `npm install`
 
  - Organise your files and folders in `/collection` using the [biiif conventions](https://github.com/edsilv/biiif/#examples)
@@ -21,7 +19,7 @@ Get started building a [IIIF](http://iiif.io)-enabled website using the [Univers
  - When ready to publish to [Github Pages](https://pages.github.com/), in the `package.json` scripts section, assuming your Github username is for example `@edsilv`, change:
 
     ```
-     "dist": "biiif collection -u https://username.github.io/uv-app-starter-fork/collection"
+     "dist": "biiif collection -u https://username.github.io/uv-app-starter/collection"
     ```
 
     to:
@@ -44,7 +42,17 @@ Get started building a [IIIF](http://iiif.io)-enabled website using the [Univers
     <iiif-gallery manifest="/my-collection/collection/index.json"></iiif-gallery>
     ```
 
-- Add your changes to the `gh-pages` branch with `git add -A`, then `git commit -m "added collection"`, and `git push origin gh-pages`
+- Add your changes:
 
-- Your site should now be available at `https://edsilv.github.io/my-collection/`
+    `git add -A`
+    
+- Commit them with a message:
+    
+    `git commit -m "added collection"`
+    
+- Push them to your fork:
+    
+    `git push origin gh-pages`
+
+- Your site should now be available at `https://edsilv.github.io/my-collection/` (may take a few seconds)
 
