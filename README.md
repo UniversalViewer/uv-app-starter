@@ -10,7 +10,7 @@ Get started building a [IIIF](http://iiif.io)-enabled website using the [Univers
 
  - Clone the repo to your desktop
 
- - Check out the `gh-pages` branch
+ - Check out the `gh-pages` branch `git checkout gh-pages`
 
  - Run `npm install`
 
@@ -32,7 +32,9 @@ Get started building a [IIIF](http://iiif.io)-enabled website using the [Univers
 
 - Now run `npm run dist`
 
-- Add your changes to the `gh-pages` branch, and `git push origin gh-pages`
+- Delete the line with `collection/**` from the `.gitignore` file
+
+- Add your changes to the `gh-pages` branch with `git add -A`, then `git commit -m "added collection"`, and `git push origin gh-pages`
 
 - Your site should now be available at `https://edsilv.github.io/my-collection/`
 
