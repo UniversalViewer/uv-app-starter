@@ -1,21 +1,27 @@
-
 body {
     margin: 0px;
     padding: 50px 0 0 0;
     overflow-x: hidden;
+    font-family: sans-serif;
 }
 
-.navbar-default {
+nav {
     background-color: #212121;
-    background-image: none;
-    border: none;
-    box-shadow: none;
-    -webkit-box-shadow: none;
-}
-
-.navbar-default .navbar-brand {
+    position: fixed;
+    height: 50px;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
     color: #fff;
     font-size: 20px;
+}
+
+nav h1 {
+    font-size: 20px;
+    font-weight: normal;
+    padding: 0;
+    margin: 13px 0 0 20px;
 }
 
 #uv {
@@ -23,17 +29,13 @@ body {
     height: 480px;
 }
 
-#uv .close {
-    opacity: 1;
+#uv .centerPanel .title {
+    padding-top: 8px;
+    font-size: 18px;
 }
 
-#uv .label {
-    display: block;
-    line-height: 17px;
-    padding: 0px;
-    font-size: 12px;
-    font-weight: 400;
-    text-align: left;
+#uv .centerPanel .attribution .title {
+    font-size: 11px;
 }
 
 #uv .uv-virtex-extension .headerPanel {
@@ -48,15 +50,25 @@ body {
     display: none;
 }
 
-#uv .centerPanel .title {
-    padding-top: 8px;
-    font-size: 18px;
-}
-
-#uv .centerPanel .attribution .title {
-    font-size: 11px;
-}
-
 iiif-gallery {
     margin: 20px;
 }
+
+/* 
+
+bootstrap fixes
+
+#uv .close {
+    opacity: 1;
+}
+
+#uv .label {
+    display: block;
+    line-height: 17px;
+    padding: 0px;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+} 
+
+*/
