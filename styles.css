@@ -29,29 +29,15 @@ nav h1 {
     height: 480px;
 }
 
-#uv .centerPanel .title {
-    padding-top: 8px;
-    font-size: 18px;
-}
-
-#uv .centerPanel .attribution .title {
-    font-size: 11px;
-}
-
-#uv .uv-virtex-extension .headerPanel {
-    height: 1px;
-}
-
-#uv .uv-virtex-extension .headerPanel .options {
-    background: none;
-}
-
-#uv .uv-virtex-extension .uv-icon-settings {
-    display: none;
-}
-
 iiif-gallery {
-    margin: 20px;
+    margin: 20px auto;
+    width: 90%;
+}
+
+@media screen and (max-width: 800px) {
+    iiif-gallery-item {
+        width:calc(50% - 8px);
+    }
 }
 
 /* 
