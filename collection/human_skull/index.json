@@ -1,0 +1,44 @@
+{
+  "id": "http://localhost:8888/collection/human_skull/index.json",
+  "type": "Manifest",
+  "label": "Human Skull",
+  "sequences": [
+    {
+      "type": "Sequence",
+      "canvases": [
+        {
+          "id": "http://localhost:8888/collection/human_skull/index.json/canvas/0",
+          "type": "Canvas",
+          "content": [
+            {
+              "id": "http://localhost:8888/collection/human_skull/index.json/canvas/0/annotationpage/0",
+              "type": "AnnotationPage",
+              "items": [
+                {
+                  "id": "http://localhost:8888/collection/human_skull/index.json/canvas/0/annotation/0",
+                  "type": "Annotation",
+                  "motivation": "painting",
+                  "body": {
+                    "id": "http://localhost:8888/collection/human_skull/_human_skull/skull.obj",
+                    "type": "PhysicalObject",
+                    "format": "text/plain",
+                    "label": "_human_skull"
+                  },
+                  "target": "http://localhost:8888/collection/human_skull/index.json/canvas/0"
+                }
+              ]
+            }
+          ],
+          "label": "_human_skull"
+        }
+      ]
+    }
+  ],
+  "attribution": "Nellis Antiques",
+  "thumbnail": [
+    {
+      "id": "http://localhost:8888/collection/human_skull/thumb.jpg",
+      "type": "Image"
+    }
+  ]
+}

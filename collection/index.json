@@ -1,0 +1,40 @@
+{
+  "id": "http://localhost:8888/collection/index.json",
+  "type": "Collection",
+  "label": "Bones",
+  "members": [
+    {
+      "id": "http://localhost:8888/collection/animal_skull/index.json",
+      "type": "Manifest",
+      "label": "Animal Skull",
+      "thumbnail": [
+        {
+          "id": "http://localhost:8888/collection/animal_skull/thumb.jpg",
+          "type": "Image"
+        }
+      ]
+    },
+    {
+      "id": "http://localhost:8888/collection/human_skull/index.json",
+      "type": "Manifest",
+      "label": "Human Skull",
+      "thumbnail": [
+        {
+          "id": "http://localhost:8888/collection/human_skull/thumb.jpg",
+          "type": "Image"
+        }
+      ]
+    },
+    {
+      "id": "http://localhost:8888/collection/vertebra/index.json",
+      "type": "Manifest",
+      "label": "Vertebra",
+      "thumbnail": [
+        {
+          "id": "http://localhost:8888/collection/vertebra/thumb.jpg",
+          "type": "Image"
+        }
+      ]
+    }
+  ]
+}

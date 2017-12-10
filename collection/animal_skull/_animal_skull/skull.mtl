@@ -1,0 +1,15 @@
+# Blender MTL File: 'skull-optimised.blend'
+# Material Count: 1
+
+newmtl normals
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.700000 0.700000 0.700000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd skull_diffuse.png
+map_Bump skull_normal.png
+norm skull_normal.png

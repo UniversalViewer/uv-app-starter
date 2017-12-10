@@ -1,6 +1,6 @@
 .vscode
 node_modules
 npm-debug.log
-content/**
-!content/README.md
+colection/**
+!colection/README.md
 uv
