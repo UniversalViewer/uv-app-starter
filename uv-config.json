@@ -1,24 +1,17 @@
 {
-    "options": {
-      "dropEnabled": true,
-      "footerPanelEnabled": true,
-      "headerPanelEnabled": false,
-      "leftPanelEnabled": true,
-      "limitLocales": false,
-      "overrideFullScreen": false,
-      "pagingEnabled": true,
-      "rightPanelEnabled": true
+  "options": {
+    "headerPanelEnabled": false
+  },
+  "modules": {
+    "headerPanel": {
+      "options": {
+        "localeToggleEnabled": false
+      }
     },
-    "modules": {
-      "headerPanel": {
-        "options": {
-          "localeToggleEnabled": false
-        }
-      },
-      "seadragonCenterPanel": {
-        "options": {
-          "autoHideControls": false
-        }
+    "footerPanel": {
+      "options": {
+        "downloadEnabled": false
       }
     }
   }
+}

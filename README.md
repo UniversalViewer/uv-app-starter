@@ -34,6 +34,18 @@ Get started building a [IIIF](http://iiif.io)-enabled website using the [Univers
 
 - Delete the line with `collection/**` from the `.gitignore` file
 
+- In `index.html`, replace:
+
+    ```
+    <iiif-gallery manifest="http://localhost:8888/collection/index.json"></iiif-gallery>
+    ```
+
+    with: 
+
+    ```
+    <iiif-gallery manifest="https://edsilv.github.io/my-collection/collection/index.json"></iiif-gallery>
+    ```
+
 - Add your changes to the `gh-pages` branch with `git add -A`, then `git commit -m "added collection"`, and `git push origin gh-pages`
 
 - Your site should now be available at `https://edsilv.github.io/my-collection/`
