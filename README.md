@@ -28,8 +28,6 @@ Get started building a [IIIF](http://iiif.io)-enabled website using the [Univers
      "dist": "biiif collection -u https://edsilv.github.io/my-collection/collection"
     ```
 
-- Now run `npm run dist`
-
 - In `index.html`, replace:
 
     ```
