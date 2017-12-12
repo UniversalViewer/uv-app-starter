@@ -42,17 +42,8 @@ Get started building a [IIIF](http://iiif.io)-enabled website using the [Univers
     <iiif-gallery manifest="/my-collection/collection/index.json"></iiif-gallery>
     ```
 
-- Add your changes:
+- Publish to github by running:
 
-    `git add -A`
-    
-- Commit them with a message:
-    
-    `git commit -m "added collection"`
-    
-- Push them to your fork:
-    
-    `git push origin gh-pages`
+    `npm run publish`
 
 - Your site should now be available at `https://edsilv.github.io/my-collection/` (may take a few seconds)
-
