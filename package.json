@@ -9,7 +9,7 @@
     "build": "biiif collection -u http://localhost:8888/collection",
     "dist": "biiif collection -u https://username.github.io/uv-app-starter/collection",
     "publish": "npm run dist && git add -A && git commit -m \"published\" && git push origin gh-pages",
-    "start": "npm run build && http-server -c-1 -p 8888"
+    "dev": "npm run build && http-server -c-1 -p 8888"
   },
   "repository": {
     "type": "git",
