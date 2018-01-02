@@ -4,6 +4,8 @@
   "description": "Universal Viewer App Starter",
   "main": "index.js",
   "scripts": {
+    "postinstall": "npm run sync",
+    "sync": "rm -rf uv && cp -R node_modules/universalviewer/uv uv",
     "build": "biiif collection -u http://localhost:8888/collection",
     "dist": "biiif collection -u https://username.github.io/uv-app-starter/collection",
     "publish": "npm run dist && git add -A && git commit -m \"published\" && git push origin gh-pages",

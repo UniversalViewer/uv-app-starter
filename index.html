@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Collection</title>
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/universalviewer@beta/uv/uv.css">
+    <link rel="stylesheet" type="text/css" href="uv/uv.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="https://unpkg.com/manifesto.js/dist/client/manifesto.bundle.js"></script>
     <script src="https://unpkg.com/iiif-gallery@0.0.4/dist/iiifgallery.js"></script>
-    <script src="https://unpkg.com/universalviewer@beta/uv/lib/offline.js"></script>
-    <script src="https://unpkg.com/universalviewer@beta/uv/helpers.js"></script>
+    <script src="uv/lib/offline.js"></script>
+    <script src="uv/helpers.js"></script>
 </head>
 
 <body>
@@ -37,7 +37,6 @@
             urlDataProvider = new UV.URLDataProvider();
 
             var data = {
-                root: 'https://unpkg.com/universalviewer@beta/uv/',
                 iiifResourceUri: manifest,
                 configUri: 'uv-config.json',
                 collectionIndex: Number(urlDataProvider.get('c', 0)),
@@ -106,7 +105,7 @@
 
     </script>
 
-    <script src="https://unpkg.com/universalviewer@beta/uv/uv.js"></script>
+    <script src="uv/uv.js"></script>
 </body>
 
 </html>
