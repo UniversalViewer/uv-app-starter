@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/UniversalViewer/uv-app-starter#readme",
   "devDependencies": {
-    "biiif-cli": "0.0.7",
+    "biiif-cli": "0.0.11",
     "http-server": "^0.10.0"
   },
   "dependencies": {
