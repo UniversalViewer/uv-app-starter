@@ -31,6 +31,6 @@
     "http-server": "^0.10.0"
   },
   "dependencies": {
-    "universalviewer": "3.0.11"
+    "universalviewer": "3.0.14"
   }
 }
