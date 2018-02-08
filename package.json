@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "Universal Viewer App Starter",
   "main": "index.js",
+  "engines": {
+    "node": ">=8.9.1",
+    "npm": ">=3.10.8"
+  },
   "scripts": {
     "postinstall": "npm run sync",
     "sync": "rm -rf uv && cp -R node_modules/universalviewer/uv uv",
