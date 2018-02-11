@@ -46,6 +46,38 @@ Get started building a [IIIF](http://iiif.io)-enabled website using the [Univers
 
 - Publish to github by running:
 
-    `npm run publish`
+    `npm run publish-gh`
 
 - Your site should now be available at `https://edsilv.github.io/my-collection/` (may take a few seconds)
+
+### Publishing using dat
+
+You can use [Beaker Browser](https://beakerbrowser.com/) to publish your portfolio using the [dat protocol](https://datproject.org/).
+
+- In Beaker, click on the menu button and select "New Site".
+
+- Give it a name and click Create Site.
+
+- Next to the Share button, click the drop down and select Change Folder.
+
+- Set the folder to the location of your current uv-app-starter project.
+
+- Now click the Share button and copy your dat address (`dat://<hash>`).
+
+- In `index.html`, replace:
+
+    ```
+    <iiif-gallery manifest="/collection/index.json"></iiif-gallery>
+    ```
+
+    with: 
+
+    ```
+    <iiif-gallery manifest="dat://<hash>/collection/index.json"></iiif-gallery>
+    ```
+
+- In `package.json` under the `dist-dat` script, replace the dat address with your site's address.
+
+- Run `npm run publish-dat`. This will generate your IIIF using your dat address as the root.
+
+- Refresh your site in Beaker. 
