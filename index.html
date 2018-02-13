@@ -8,7 +8,6 @@
     <title>My Collection</title>
     <link rel="stylesheet" type="text/css" href="uv/uv.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="https://unpkg.com/manifesto.js/dist/client/manifesto.bundle.js"></script>
     <script src="https://unpkg.com/iiif-gallery/dist/iiifgallery.js"></script>
     <script src="uv/lib/offline.js"></script>
     <script src="uv/helpers.js"></script>
@@ -32,11 +31,36 @@
 
         var uv, $uv, urlDataProvider, manifest;
 
-        function setupUV() {
+        function openManifest() {
+
+            window.scrollTo(0, 0);
+
+            $uv.slideDown("fast", function() {
+                uv.set({
+                    root: './uv',
+                    iiifResourceUri: manifest,
+                    configUri: 'uv-config.json',
+                    collectionIndex: 0,
+                    manifestIndex: 0,
+                    sequenceIndex: 0,
+                    canvasIndex: 0,
+                    locales: [
+                        {
+                            name: 'en-GB'
+                        }
+                    ]
+                });
+            });
+        }
+
+        window.addEventListener('uvLoaded', function (e) {
+
+            $uv = $('#uv');
 
             urlDataProvider = new UV.URLDataProvider();
 
             var data = {
+                root: './uv',
                 iiifResourceUri: manifest,
                 configUri: 'uv-config.json',
                 collectionIndex: Number(urlDataProvider.get('c', 0)),
@@ -44,43 +68,19 @@
                 sequenceIndex: Number(urlDataProvider.get('s', 0)),
                 canvasIndex: Number(urlDataProvider.get('cv', 0)),
                 rotation: Number(urlDataProvider.get('r', 0)),
-                xywh: urlDataProvider.get('xywh', '')
+                xywh: urlDataProvider.get('xywh', ''),
+                locales: [
+                    {
+                        name: 'en-GB'
+                    }
+                ]
             };
 
             uv = createUV('#uv', data, urlDataProvider);
 
-            uv.on('created', function () {
+            uv.on('created', function() {
                 Utils.Urls.setHashParameter('manifest', manifest);
             });
-        }
-
-        function openManifest() {
-
-            if (!uv) {
-
-                $uv.slideDown("fast", function() {
-                    setupUV();
-                });
-
-            } else {
-
-                uv.set({
-                    iiifResourceUri: manifest,
-                    collectionIndex: 0,
-                    manifestIndex: 0,
-                    sequenceIndex: 0,
-                    canvasIndex: 0
-                });
-
-                window.scrollTo(0, 0);
-
-            }
-
-        }
-
-        window.addEventListener('uvLoaded', function (e) {
-
-            $uv = $('#uv');
 
             const iiifGallery = document.querySelector('iiif-gallery');
 
