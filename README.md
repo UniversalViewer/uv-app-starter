@@ -54,6 +54,8 @@ Get started building a [IIIF](http://iiif.io)-enabled website using the [Univers
 
 You can use [Beaker Browser](https://beakerbrowser.com/) to publish your portfolio using the [dat protocol](https://datproject.org/).
 
+Example: dat://3088365c94ecbe15d2963b1a1e629ee408535e5273c8b15fc20203b2b6f22020
+
 - In Beaker, click on the menu button and select "New Site".
 
 - Give it a name and click Create Site.
