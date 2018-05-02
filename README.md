@@ -5,6 +5,7 @@ Get started building a [IIIF](http://iiif.io)-enabled website using the [Univers
 ### Examples
 
 - https://sophiedixon.github.io/3d-portfolio/
+- https://grafton9.net/codici-immaginari/index.html
 
 ### Setup
 
