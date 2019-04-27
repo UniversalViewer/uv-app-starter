@@ -2,11 +2,6 @@
 
 Get started building a [IIIF](http://iiif.io)-enabled website using the [Universal Viewer](http://universalviewer.io) and host it for free on [Github Pages](https://pages.github.com/).
 
-### Examples
-
-- https://sophiedixon.github.io/3d-portfolio/
-- https://grafton9.net/codici-immaginari/index.html
-
 ### Setup
 
  - Fork this repo on github to your personal account.
