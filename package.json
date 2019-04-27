@@ -9,12 +9,12 @@
   },
   "scripts": {
     "postinstall": "npm run sync",
-    "sync": "rm -rf uv && cp -R node_modules/universalviewer/uv uv",
-    "build": "biiif collection -u http://localhost:8888/collection",
-    "dist-gh": "biiif collection -u https://username.github.io/uv-app-starter/collection",
-    "dist-dat": "biiif collection -u dat://59ff047d6c3eadea7031769479e2aa436c88f046ad16c898577b105000ff85a9/collection",
-    "publish-gh": "npm run dist-gh && git add -A && git commit -m \"published\" && git push origin gh-pages",
-    "publish-dat": "npm run dist-dat",
+    "sync": "rm -rf uv && cp -R node_modules/universalviewer/dist uv",
+    "build": "biiif collection -u http://localhost:8888/collection -g",
+    "dist:gh": "biiif collection -u https://username.github.io/uv-app-starter/collection -g",
+    "dist:dat": "biiif collection -u dat://59ff047d6c3eadea7031769479e2aa436c88f046ad16c898577b105000ff85a9/collection -g",
+    "publish:gh": "npm run dist:gh && git add -A && git commit -m \"published\" && git push origin gh-pages",
+    "publish:dat": "npm run dist:dat",
     "start": "npm run build && http-server --cors -c-1 -p 8888"
   },
   "repository": {
@@ -33,10 +33,10 @@
   },
   "homepage": "https://github.com/UniversalViewer/uv-app-starter#readme",
   "devDependencies": {
-    "biiif-cli": "0.0.13",
+    "biiif-cli": "0.0.19",
     "http-server": "^0.10.0"
   },
   "dependencies": {
-    "universalviewer": "3.0.21"
+    "universalviewer": "3.0.33"
   }
 }

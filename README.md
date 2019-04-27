@@ -47,7 +47,7 @@ Get started building a [IIIF](http://iiif.io)-enabled website using the [Univers
 
 - Publish to github by running:
 
-    `npm run publish-gh`
+    `npm run publish:gh`
 
 - Your site should now be available at `https://edsilv.github.io/my-collection/` (may take a few seconds)
 
@@ -79,8 +79,8 @@ Example: dat://3088365c94ecbe15d2963b1a1e629ee408535e5273c8b15fc20203b2b6f22020
     <iiif-gallery manifest="dat://<hash>/collection/index.json"></iiif-gallery>
     ```
 
-- In `package.json` under the `dist-dat` script, replace the dat address with your site's address.
+- In `package.json` under the `dist:dat` script, replace the dat address with your site's address.
 
-- Run `npm run publish-dat`. This will generate your IIIF using your dat address as the root.
+- Run `npm run publish:dat`. This will generate your IIIF using your dat address as the root.
 
 - Refresh your site in Beaker. 
