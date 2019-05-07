@@ -1,0 +1,20 @@
+{
+  "id": "http://localhost:8888/collection/index.json",
+  "type": "Collection",
+  "items": [
+    {
+      "id": "http://localhost:8888/collection/crick/index.json",
+      "type": "Manifest",
+      "label": {
+        "@none": [
+          "crick"
+        ]
+      }
+    }
+  ],
+  "label": {
+    "@none": [
+      "collection"
+    ]
+  }
+}

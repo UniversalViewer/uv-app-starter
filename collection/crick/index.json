@@ -1,0 +1,76 @@
+{
+  "id": "http://localhost:8888/collection/crick/index.json",
+  "type": "Manifest",
+  "items": [
+    {
+      "id": "http://localhost:8888/collection/crick/index.json/canvas/0",
+      "type": "Canvas",
+      "items": [
+        {
+          "id": "http://localhost:8888/collection/crick/index.json/canvas/0/annotationpage/0",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://localhost:8888/collection/crick/index.json/canvas/0/annotation/0",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "http://localhost:8888/collection/crick/_letter/letter.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "label": {
+                  "@none": [
+                    "Copied letter from Francis Crick to Michael Cric"
+                  ]
+                }
+              },
+              "target": "http://localhost:8888/collection/crick/index.json/canvas/0"
+            }
+          ]
+        }
+      ],
+      "label": {
+        "@none": [
+          "Copied letter from Francis Crick to Michael Cric"
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "@none": [
+              "license"
+            ]
+          },
+          "value": {
+            "@none": [
+              "CC-BY-NC"
+            ]
+          }
+        },
+        {
+          "label": {
+            "@none": [
+              "date"
+            ]
+          },
+          "value": {
+            "@none": [
+              1953
+            ]
+          }
+        }
+      ],
+      "thumbnail": [
+        {
+          "id": "http://localhost:8888/collection/crick/_letter/thumb.jpeg",
+          "type": "Image"
+        }
+      ]
+    }
+  ],
+  "label": {
+    "@none": [
+      "crick"
+    ]
+  }
+}
