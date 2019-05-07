@@ -18,35 +18,23 @@ demo: http://universalviewer.io/uv-app-starter/
 
  - Run `npm start` to preview on `http://localhost:8888`
 
- - When ready to publish to [Github Pages](https://pages.github.com/), in the `package.json` scripts section, assuming your Github username is for example `@edsilv`, change:
+ - When ready to publish to [Github Pages](https://pages.github.com/), in the `package.json` scripts section, assuming your Github username is for example `@username`, change:
 
     ```
-     "dist": "biiif collection -u https://username.github.io/uv-app-starter/collection"
+     "dist:gh": "biiif collection -u http://universalviewer.io/uv-app-starter/collection -g"
     ```
 
     to:
 
     ```
-     "dist": "biiif collection -u https://edsilv.github.io/my-collection/collection"
-    ```
-
-- In `index.html`, replace:
-
-    ```
-    <iiif-gallery manifest="/collection/index.json"></iiif-gallery>
-    ```
-
-    with: 
-
-    ```
-    <iiif-gallery manifest="/my-collection/collection/index.json"></iiif-gallery>
+     "dist:gh": "biiif collection -u https://username.github.io/uv-app-starter/collection -g"
     ```
 
 - Publish to github by running:
 
     `npm run publish:gh`
 
-- Your site should now be available at `https://edsilv.github.io/my-collection/` (may take a few seconds)
+- Your site should now be available at `https://username.github.io/my-collection/` (may take a few seconds)
 
 ### Publishing using dat
 

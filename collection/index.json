@@ -1,9 +1,9 @@
 {
-  "id": "https://universalviewer.github.io/uv-app-starter/collection/index.json",
+  "id": "http://universalviewer.io/uv-app-starter/collection/index.json",
   "type": "Collection",
   "items": [
     {
-      "id": "https://universalviewer.github.io/uv-app-starter/collection/crick/index.json",
+      "id": "http://universalviewer.io/uv-app-starter/collection/crick/index.json",
       "type": "Manifest",
       "label": {
         "@none": [
@@ -12,7 +12,7 @@
       },
       "thumbnail": [
         {
-          "id": "https://universalviewer.github.io/uv-app-starter/collection/crick/thumb.jpeg",
+          "id": "http://universalviewer.io/uv-app-starter/collection/crick/thumb.jpeg",
           "type": "Image"
         }
       ]
