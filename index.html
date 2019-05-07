@@ -32,25 +32,26 @@
 
         var uv, $uv, urlDataProvider, manifest;
 
-        function openManifest() {
-
+        function openManifest(resetHash) {
             window.scrollTo(0, 0);
-
+            var params = {
+                root: './uv',
+                iiifResourceUri: manifest,
+                configUri: 'uv-config.json',
+                locales: [
+                    {
+                        name: 'en-GB'
+                    }
+                ]
+            };
+            if (resetHash) {
+                params.collectionIndex = 0;
+                params.manifestIndex = 0;
+                params.sequenceIndex = 0;
+                params.canvasIndex = 0;
+            }
             $uv.slideDown("fast", function() {
-                uv.set({
-                    root: './uv',
-                    iiifResourceUri: manifest,
-                    configUri: 'uv-config.json',
-                    collectionIndex: 0,
-                    manifestIndex: 0,
-                    sequenceIndex: 0,
-                    canvasIndex: 0,
-                    locales: [
-                        {
-                            name: 'en-GB'
-                        }
-                    ]
-                });
+                uv.set(params);
             });
         }
 
@@ -60,6 +61,8 @@
 
             urlDataProvider = new UV.URLDataProvider();
 
+            // are there uv hash parameters?
+            manifest = urlDataProvider.get('manifest', null);
             var data = {
                 root: './uv',
                 iiifResourceUri: manifest,
@@ -76,7 +79,6 @@
                     }
                 ]
             };
-
             uv = createUV('#uv', data, urlDataProvider);
 
             uv.on('created', function() {
@@ -87,19 +89,17 @@
 
             iiifGallery.addEventListener('selectManifest', function (evt) {
                 manifest = evt.detail.id;
-                openManifest();
+                openManifest(true);
             });
 
             iiifGallery.addEventListener('selectCollection', function (evt) {
                 manifest = evt.detail.id;
-                openManifest();
+                openManifest(true);
             });
 
-            // are there uv hash parameters?
-            manifest = Utils.Urls.getHashParameter('manifest');
-
+            // If a manifest was specified in the parameters, display it now:
             if (manifest) {
-                openManifest();
+                openManifest(false);
             }
 
         }, false);
