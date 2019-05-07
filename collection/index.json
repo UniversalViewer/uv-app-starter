@@ -1,68 +1,18 @@
 {
   "id": "https://universalviewer.github.io/uv-app-starter/collection/index.json",
-  "type": "Manifest",
+  "type": "Collection",
   "items": [
     {
-      "id": "https://universalviewer.github.io/uv-app-starter/collection/index.json/canvas/0",
-      "type": "Canvas",
-      "items": [
-        {
-          "id": "https://universalviewer.github.io/uv-app-starter/collection/index.json/canvas/0/annotationpage/0",
-          "type": "AnnotationPage",
-          "items": [
-            {
-              "id": "https://universalviewer.github.io/uv-app-starter/collection/index.json/canvas/0/annotation/0",
-              "type": "Annotation",
-              "motivation": "painting",
-              "body": {
-                "id": "https://universalviewer.github.io/uv-app-starter/collection/_letter/letter.jpg",
-                "type": "Image",
-                "format": "image/jpeg",
-                "label": {
-                  "@none": [
-                    "Copied letter from Francis Crick to Michael Crick"
-                  ]
-                }
-              },
-              "target": "https://universalviewer.github.io/uv-app-starter/collection/index.json/canvas/0"
-            }
-          ]
-        }
-      ],
+      "id": "https://universalviewer.github.io/uv-app-starter/collection/crick/index.json",
+      "type": "Manifest",
       "label": {
         "@none": [
-          "Copied letter from Francis Crick to Michael Crick"
+          "crick"
         ]
       },
-      "metadata": [
-        {
-          "label": {
-            "@none": [
-              "license"
-            ]
-          },
-          "value": {
-            "@none": [
-              "CC-BY-NC"
-            ]
-          }
-        },
-        {
-          "label": {
-            "@none": [
-              "date"
-            ]
-          },
-          "value": {
-            "@none": [
-              1953
-            ]
-          }
-        }
-      ],
       "thumbnail": [
         {
-          "id": "https://universalviewer.github.io/uv-app-starter/collection/_letter/thumb.jpeg",
+          "id": "https://universalviewer.github.io/uv-app-starter/collection/crick/thumb.jpeg",
           "type": "Image"
         }
       ]
