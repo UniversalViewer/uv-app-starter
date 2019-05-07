@@ -8,8 +8,6 @@ demo: http://universalviewer.io/uv-app-starter/
 
  - Fork this repo on github to your personal account.
 
- - Rename the repo, e.g. "my-collection"
-
  - Clone the repo to your desktop
 
  - Run `npm install`
@@ -34,7 +32,7 @@ demo: http://universalviewer.io/uv-app-starter/
 
     `npm run publish:gh`
 
-- Your site should now be available at `https://username.github.io/my-collection/` (may take a few seconds)
+- Your site should now be available at `https://username.github.io/uv-app-starter/` (may take a few seconds)
 
 ### Publishing using dat
 
