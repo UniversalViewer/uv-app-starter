@@ -1,21 +1,21 @@
 {
-  "id": "http://localhost:8888/collection/crick/index.json",
+  "id": "https://username.github.io/uv-app-starter/collection/crick/index.json",
   "type": "Manifest",
   "items": [
     {
-      "id": "http://localhost:8888/collection/crick/index.json/canvas/0",
+      "id": "https://username.github.io/uv-app-starter/collection/crick/index.json/canvas/0",
       "type": "Canvas",
       "items": [
         {
-          "id": "http://localhost:8888/collection/crick/index.json/canvas/0/annotationpage/0",
+          "id": "https://username.github.io/uv-app-starter/collection/crick/index.json/canvas/0/annotationpage/0",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "http://localhost:8888/collection/crick/index.json/canvas/0/annotation/0",
+              "id": "https://username.github.io/uv-app-starter/collection/crick/index.json/canvas/0/annotation/0",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "http://localhost:8888/collection/crick/_letter/letter.jpg",
+                "id": "https://username.github.io/uv-app-starter/collection/crick/_letter/letter.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "label": {
@@ -24,7 +24,7 @@
                   ]
                 }
               },
-              "target": "http://localhost:8888/collection/crick/index.json/canvas/0"
+              "target": "https://username.github.io/uv-app-starter/collection/crick/index.json/canvas/0"
             }
           ]
         }
@@ -62,7 +62,7 @@
       ],
       "thumbnail": [
         {
-          "id": "http://localhost:8888/collection/crick/_letter/thumb.jpeg",
+          "id": "https://username.github.io/uv-app-starter/collection/crick/_letter/thumb.jpeg",
           "type": "Image"
         }
       ]

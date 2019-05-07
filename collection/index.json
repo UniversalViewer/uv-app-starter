@@ -1,9 +1,9 @@
 {
-  "id": "http://localhost:8888/collection/index.json",
+  "id": "https://username.github.io/uv-app-starter/collection/index.json",
   "type": "Collection",
   "items": [
     {
-      "id": "http://localhost:8888/collection/crick/index.json",
+      "id": "https://username.github.io/uv-app-starter/collection/crick/index.json",
       "type": "Manifest",
       "label": {
         "@none": [

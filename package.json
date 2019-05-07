@@ -12,8 +12,10 @@
     "sync": "rm -rf uv && cp -R node_modules/universalviewer/dist uv",
     "build": "biiif collection -u http://localhost:8888/collection -g",
     "dist:gh": "biiif collection -u https://username.github.io/uv-app-starter/collection -g",
+    "dist:netlify": "biiif collection -u https://uv-app-starter.netlify.com/collection -g",
     "dist:dat": "biiif collection -u dat://59ff047d6c3eadea7031769479e2aa436c88f046ad16c898577b105000ff85a9/collection -g",
     "publish:gh": "npm run dist:gh && git add -A && git commit -m \"published\" && git push origin gh-pages",
+    "publish:netlify": "npm run dist:netlify && netlify deploy --prod",
     "publish:dat": "npm run dist:dat",
     "start": "npm run build && http-server --cors -c-1 -p 8888"
   },
