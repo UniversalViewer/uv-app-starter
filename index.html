@@ -85,12 +85,12 @@
 
             const iiifGallery = document.querySelector('iiif-gallery');
 
-            iiifGallery.addEventListener('onSelectManifest', function (evt) {
+            iiifGallery.addEventListener('selectManifest', function (evt) {
                 manifest = evt.detail.id;
                 openManifest();
             });
 
-            iiifGallery.addEventListener('onSelectCollection', function (evt) {
+            iiifGallery.addEventListener('selectCollection', function (evt) {
                 manifest = evt.detail.id;
                 openManifest();
             });
